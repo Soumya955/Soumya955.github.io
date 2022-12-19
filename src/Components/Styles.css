@@ -1,0 +1,78 @@
+/* Navbar */
+
+a {
+  text-decoration: none;
+}
+
+.navMain {
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 5%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+  z-index: 100;
+}
+
+@media (max-width: 600px) {
+  .navMain {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navMain {
+    font-size: 12px;
+  }
+}
+
+.navMain > div {
+  display: flex;
+  /* align-items: center; */
+  color: #d24d57;
+}
+.navMain > div > a {
+  text-decoration: none;
+}
+
+.navMain > div > div {
+  box-sizing: border-box;
+  padding: 0px 10px;
+  margin: 0px 5px;
+  color: #d24d57;
+}
+.navMain > div > div > a {
+  text-decoration: none;
+}
+
+
+.download {
+  font-size: 15px;
+  border: 1px solid gray;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.download > a {
+  text-decoration: none;
+  color: gray;
+}
+
+
+
+.heroMain {
+  margin-top: 60px;
+}
+
+
+.projectmaindiv {
+  margin-top: 100px;
+}
