@@ -1,3 +1,6 @@
+
+
+
 /* Navbar */
 
 a {
@@ -10,7 +13,7 @@ a {
   box-sizing: border-box;
   padding: 20px 5%;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   font-size: 20px;
   font-weight: 600;
@@ -18,23 +21,11 @@ a {
   background-color: white;
   box-shadow: 0 0 5px rgb(0 0 0 / 20%);
   z-index: 100;
+  background-color: rgb(244, 244, 244);
 }
-
-@media (max-width: 600px) {
-  .navMain {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 450px) {
-  .navMain {
-    font-size: 12px;
-  }
-}
-
 .navMain > div {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   color: #d24d57;
 }
 .navMain > div > a {
@@ -49,6 +40,45 @@ a {
 }
 .navMain > div > div > a {
   text-decoration: none;
+}
+@media (max-width: 710px) {
+  .navMain {
+    font-size: 15px;
+    padding: 15px 3%;
+  }
+}
+@media (max-width: 570px) {
+  .navMain {
+    font-size: 12px;
+    padding: 14px 0px;
+  }
+  .namMain>div{
+    justify-content: space-around;
+  }
+  .navMain > div > div{
+    padding: 0px 3px;
+    margin: 0px 3px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navMain {
+    font-size: 10px;
+  }
+  .navMain > div > div{
+    padding: 0px 3px;
+    margin: 0px 3px;
+  }
+}
+
+@media (max-width: 325px) {
+  .navMain {
+    font-size: 8px;
+  }
+  .navMain > div > div{
+    padding: 0px 2px;
+    margin: 0px 2px;
+  }
 }
 
 
@@ -67,11 +97,9 @@ a {
 }
 
 
-
 .heroMain {
   margin-top: 60px;
 }
-
 
 .projectmaindiv {
   margin-top: 100px;

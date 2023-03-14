@@ -23,17 +23,6 @@ const closeMenu=()=>setClick(false)
         {/* <Link to="/">Soumyaranjan Badajena </Link> */}
       </div>
       <div>
-      <div className="download">
-              <Link
-              style={{color:"#d24d57"}}
-                to="/files/Soumyaranjan.pdf"
-                className="btn btn--outline"
-                target="_blank"
-                download
-              >
-                Download Resume
-              </Link>
-            </div>
       <div
           onClick={() => {
             setIsPage("skill");
@@ -78,8 +67,16 @@ const closeMenu=()=>setClick(false)
           }}
           style={isPage === "about" ? { color: "black" } : null}
         >
-        <Link to="about" spy={true} smooth={true} offset={-100} duration={700} onClick={closeMenu}> <h2 > Contact Me </h2></Link>
+        <Link to="about" spy={true} smooth={true} offset={-100} duration={700} onClick={closeMenu}> <h2 >Contact</h2></Link>
           {/* <Link to="/about-me">Contact Me</Link> */}
+        </div>
+        <div
+          onClick={() => {
+            setIsPage("resume");
+          }}
+          style={isPage === "resume" ? { color: "black" } : null}
+        >
+          <a download href="https://drive.google.com/file/d/1Jhyoauwp0KkeZCqLnEIogqwOsJbrdEwA/view?usp=sharing" target="_blank">Resume</a>
         </div>
         
       </div>
